@@ -12,8 +12,8 @@
         </q-btn>
 
         <q-toolbar-title>
-          Quasar + Firebase Auth
-          <div slot="subtitle">Quasar Framework 0.15.6 + Firebase Auth</div>
+          TechFin
+          <div slot="subtitle">Controle de Finanças</div>
         </q-toolbar-title>
       </q-toolbar>
     </q-layout-header>
@@ -27,7 +27,11 @@
         link
         inset-delimiter
       >
-        <q-list-header>Essential Links</q-list-header>
+        <q-list-header>MENU</q-list-header>
+        <q-item @click.native="$router.push('/cadastro/formUsuario')">
+          <q-item-side icon="add"/>
+          <q-item-main label="CADASTROS" />
+        </q-item>
         <q-item :link="true" to="/">
           <q-item-side icon="home"/>
           <q-item-main label="HOME" />

@@ -9,9 +9,22 @@ const routes = [
     meta: {
       requiresAuth: true
     },
-    children: [{ path: '/home', component: () => import('pages/index') }]
+    children:
+      [
+        { path: '', component: () => import('pages/index') }
+      ]
   },
-
+  {
+    path: '/cadastro',
+    component: () => import('layouts/default'),
+    meta: {
+      requiresAuth: false
+    },
+    children:
+      [
+        { path: 'formUsuario', component: () => import('pages/usuarios/formUsuario.vue') }
+      ]
+  },
   {
     // Always leave this as last one
     path: '*',

@@ -54,9 +54,21 @@ module.exports = function (ctx) {
         'QItem',
         'QItemMain',
         'QItemSide',
+        'QFab',
+        'QFabAction',
+        'QPageSticky',
+        'QTable',
+
+        // pick only what you are using from:
+        'QTh',
+        'QTr',
+        'QTd',
+        'QTableColumns',
+        'QModal'
       ],
       directives: [
-        'Ripple'
+        'Ripple',
+        'CloseOverlay'
       ],
       // Quasar plugins
       plugins: [
@@ -68,7 +80,7 @@ module.exports = function (ctx) {
     animations: [
     ],
     pwa: {
-      cacheExt: 'js,html,css,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3',
+      // cacheExt: 'js,html,css,ttf,eot,otf,woff,woff2,json,svg,gif,jpg,jpeg,png,wav,ogg,webm,flac,aac,mp4,mp3',
       manifest: {
         // name: 'Quasar App',
         // short_name: 'Quasar-PWA',
